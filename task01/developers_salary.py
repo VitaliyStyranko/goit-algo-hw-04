@@ -13,7 +13,7 @@ def total_salary(path):
             average_salary = total_salary // developers
 
     except FileNotFoundError as e:
-        print(f"File '{path}' not found.")
+        print(f"File '{path}' not found: {e}")
         return None, None
     except ValueError as e:
         print(f"An error occurred while reading the file {path}. Error: {e}")
